@@ -17,14 +17,19 @@ local function getAvailablePlot()
 	return nil
 end
 
-local PlotManager = {}
+local PlotManager = {
+	Priority = 1,
+}
 
 function PlotManager:GetPlayersTowerBase(player)
 	local plotData = occupiedPlots[player]
-	if plotData then
-		return plotData.towerBase
+	if not plotData then
+		repeat
+			task.wait()
+			plotData = occupiedPlots[player]
+		until plotData
 	end
-	return nil
+	return plotData.towerBase
 end
 
 function PlotManager:PlayerAdded(player)

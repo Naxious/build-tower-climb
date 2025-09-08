@@ -8,7 +8,9 @@ local PlotManager = require(ServerScriptService.Systems.PlotManager)
 local towerDesigns = {}
 local builtTowers = {}
 
-local TowerService = {}
+local TowerService = {
+	Priority = 2,
+}
 
 function TowerService:GetTowerDesign(player)
 	return towerDesigns[player.UserId] or {}
@@ -38,7 +40,6 @@ function TowerService:BuildTower(player)
 		return
 	end
 
-	-- Clear existing tower parts
 	for _, child in towerBase:GetChildren() do
 		if child:IsA("BasePart") and child:GetAttribute("IsTowerBlock") then
 			child:Destroy()
@@ -61,20 +62,19 @@ function TowerService:BuildTower(player)
 		end
 
 		while remaining > 0 do
-			local segment = math.min(remaining, 100) -- cap segment height at 100
+			local segment = math.min(remaining, 100)
+			segment = segment - (segment % 2)
+			if segment <= 0 then
+				break
+			end
 
 			local trussPart = Instance.new("TrussPart")
-			trussPart.Name = string.format("%s %d (%.0f)", blockData.Name, index, segment)
+			trussPart.Name = string.format("%s %d (%.0f)", blockName, index, segment)
 			trussPart.Size = Vector3.new(2, segment, 2)
 			trussPart.CFrame = CFrame.new(buildPosition + Vector3.new(0, currentHeight + (segment / 2), 0))
 			trussPart.Color = blockData.Color
 			trussPart.Anchored = true
-			trussPart.TopSurface = Enum.SurfaceType.Smooth
-			trussPart.BottomSurface = Enum.SurfaceType.Smooth
-
-			-- mark so we can clean these up next build
-			trussPart:SetAttribute("IsTowerBlock", true)
-
+			trussPart.Material = blockData.Material or Enum.Material.Plastic
 			trussPart.Parent = towerBase
 
 			currentHeight += segment
@@ -88,9 +88,11 @@ end
 function TowerService:PlayerAdded(player)
 	-- TODO: Replace with actual data loading logic
 	towerDesigns[player.UserId] = {
-		Blocks.Aluminum.Name,
-		Blocks.Wood.Name,
-		Blocks.Brick.Name,
+		Blocks.Godsteel.Id,
+		Blocks.Amberwood.Id,
+		Blocks["Hard Ice"].Id,
+		Blocks.Stormglass.Id,
+		Blocks.Pearlstone.Id,
 	}
 
 	TowerService:BuildTower(player)

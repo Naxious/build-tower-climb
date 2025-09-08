@@ -5,6 +5,7 @@ local BlockTypes = require(ReplicatedStorage.Data.BlockTypes)
 local Blocks = {
 	-- Early game: quick wins, mixed families
 	["Weak Wood"] = {
+		Id = "Weak Wood",
 		BlockType = BlockTypes.Wood,
 		Cost = 20,
 		Strength = 8,
@@ -13,6 +14,7 @@ local Blocks = {
 		Rarity = "Common",
 	},
 	["Tempered Glass"] = {
+		Id = "Tempered Glass",
 		BlockType = BlockTypes.Glass,
 		Cost = 55,
 		Strength = 16,
@@ -21,6 +23,7 @@ local Blocks = {
 		Rarity = "Rare",
 	},
 	["Brick"] = {
+		Id = "Brick",
 		BlockType = BlockTypes.Brick,
 		Cost = 80,
 		Strength = 20,
@@ -29,6 +32,7 @@ local Blocks = {
 		Rarity = "Common",
 	},
 	["Cut Wood"] = {
+		Id = "Cut Wood",
 		BlockType = BlockTypes.Wood,
 		Cost = 35,
 		Strength = 12,
@@ -37,6 +41,7 @@ local Blocks = {
 		Rarity = "Common",
 	},
 	["Hardened Clay"] = {
+		Id = "Hardened Clay",
 		BlockType = BlockTypes.Ceramic,
 		Cost = 95,
 		Strength = 22,
@@ -45,6 +50,7 @@ local Blocks = {
 		Rarity = "Common",
 	},
 	["Fiberglass"] = {
+		Id = "Fiberglass",
 		BlockType = BlockTypes.Composite,
 		Cost = 140,
 		Strength = 28,
@@ -53,6 +59,7 @@ local Blocks = {
 		Rarity = "Rare",
 	},
 	["Reclaimed Timber"] = {
+		Id = "Reclaimed Timber",
 		BlockType = BlockTypes.Wood,
 		Cost = 110,
 		Strength = 24,
@@ -61,6 +68,7 @@ local Blocks = {
 		Rarity = "Rare",
 	},
 	["Basalt Stone"] = {
+		Id = "Basalt Stone",
 		BlockType = BlockTypes.Stone,
 		Cost = 210,
 		Strength = 36,
@@ -69,6 +77,7 @@ local Blocks = {
 		Rarity = "Rare",
 	},
 	["Aluminum"] = {
+		Id = "Aluminum",
 		BlockType = BlockTypes.Metal,
 		Cost = 180,
 		Strength = 32,
@@ -77,6 +86,7 @@ local Blocks = {
 		Rarity = "Rare",
 	},
 	["Laminate Composite"] = {
+		Id = "Laminate Composite",
 		BlockType = BlockTypes.Composite,
 		Cost = 300,
 		Strength = 44,
@@ -87,6 +97,7 @@ local Blocks = {
 
 	-- Still early/mid, quick climb but slowing
 	["Granite"] = {
+		Id = "Granite",
 		BlockType = BlockTypes.Stone,
 		Cost = 360,
 		Strength = 48,
@@ -95,6 +106,7 @@ local Blocks = {
 		Rarity = "Epic",
 	},
 	["Reinforced Wood"] = {
+		Id = "Reinforced Wood",
 		BlockType = BlockTypes.Wood,
 		Cost = 160,
 		Strength = 30,
@@ -103,6 +115,7 @@ local Blocks = {
 		Rarity = "Rare",
 	},
 	["Cold-Worked Steel"] = {
+		Id = "Cold-Worked Steel",
 		BlockType = BlockTypes.Metal,
 		Cost = 260,
 		Strength = 40,
@@ -111,6 +124,7 @@ local Blocks = {
 		Rarity = "Rare",
 	},
 	["Marble"] = {
+		Id = "Marble",
 		BlockType = BlockTypes.Marble,
 		Cost = 520,
 		Strength = 60,
@@ -119,6 +133,7 @@ local Blocks = {
 		Rarity = "Epic",
 	},
 	["Obsidian"] = {
+		Id = "Obsidian",
 		BlockType = BlockTypes.Glass,
 		Cost = 740,
 		Strength = 68,
@@ -127,6 +142,7 @@ local Blocks = {
 		Rarity = "Epic",
 	},
 	["Kevlar Weave"] = {
+		Id = "Kevlar Weave",
 		BlockType = BlockTypes.Fiber,
 		Cost = 680,
 		Strength = 66,
@@ -135,6 +151,7 @@ local Blocks = {
 		Rarity = "Epic",
 	},
 	["Steel"] = {
+		Id = "Steel",
 		BlockType = BlockTypes.Metal,
 		Cost = 210,
 		Strength = 38,
@@ -143,6 +160,7 @@ local Blocks = {
 		Rarity = "Rare",
 	},
 	["Quartz Glass"] = {
+		Id = "Quartz Glass",
 		BlockType = BlockTypes.Glass,
 		Cost = 390,
 		Strength = 46,
@@ -151,6 +169,7 @@ local Blocks = {
 		Rarity = "Rare",
 	},
 	["Slate"] = {
+		Id = "Slate",
 		BlockType = BlockTypes.Stone,
 		Cost = 230,
 		Strength = 34,
@@ -159,6 +178,7 @@ local Blocks = {
 		Rarity = "Common",
 	},
 	["Cedar Planks"] = {
+		Id = "Cedar Planks",
 		BlockType = BlockTypes.Wood,
 		Cost = 150,
 		Strength = 29,
@@ -169,6 +189,7 @@ local Blocks = {
 
 	-- Mid game
 	["Titanium"] = {
+		Id = "Titanium",
 		BlockType = BlockTypes.Metal,
 		Cost = 800,
 		Strength = 70,
@@ -177,6 +198,7 @@ local Blocks = {
 		Rarity = "Epic",
 	},
 	["Hardened Concrete"] = {
+		Id = "Hardened Concrete",
 		BlockType = BlockTypes.Concrete,
 		Cost = 560,
 		Strength = 58,
@@ -185,6 +207,7 @@ local Blocks = {
 		Rarity = "Epic",
 	},
 	["Spring Steel"] = {
+		Id = "Spring Steel",
 		BlockType = BlockTypes.Metal,
 		Cost = 620,
 		Strength = 62,
@@ -193,6 +216,7 @@ local Blocks = {
 		Rarity = "Epic",
 	},
 	["Carbon Fiber"] = {
+		Id = "Carbon Fiber",
 		BlockType = BlockTypes.Fiber,
 		Cost = 900,
 		Strength = 74,
@@ -201,6 +225,7 @@ local Blocks = {
 		Rarity = "Epic",
 	},
 	["Tungsten"] = {
+		Id = "Tungsten",
 		BlockType = BlockTypes.Metal,
 		Cost = 980,
 		Strength = 76,
@@ -209,6 +234,7 @@ local Blocks = {
 		Rarity = "Epic",
 	},
 	["Borosilicate Glass"] = {
+		Id = "Borosilicate Glass",
 		BlockType = BlockTypes.Glass,
 		Cost = 450,
 		Strength = 52,
@@ -217,6 +243,7 @@ local Blocks = {
 		Rarity = "Rare",
 	},
 	["Rebar Composite"] = {
+		Id = "Rebar Composite",
 		BlockType = BlockTypes.Composite,
 		Cost = 700,
 		Strength = 64,
@@ -225,6 +252,7 @@ local Blocks = {
 		Rarity = "Epic",
 	},
 	["Alloyed Aluminum"] = {
+		Id = "Alloyed Aluminum",
 		BlockType = BlockTypes.Metal,
 		Cost = 520,
 		Strength = 56,
@@ -233,6 +261,7 @@ local Blocks = {
 		Rarity = "Rare",
 	},
 	["Bamboo Laminate"] = {
+		Id = "Bamboo Laminate",
 		BlockType = BlockTypes.Wood,
 		Cost = 260,
 		Strength = 40,
@@ -241,6 +270,7 @@ local Blocks = {
 		Rarity = "Rare",
 	},
 	["Reinforced Brick"] = {
+		Id = "Reinforced Brick",
 		BlockType = BlockTypes.Brick,
 		Cost = 320,
 		Strength = 44,
@@ -251,6 +281,7 @@ local Blocks = {
 
 	-- Upper mid
 	["Titanium Alloy"] = {
+		Id = "Titanium Alloy",
 		BlockType = BlockTypes.Metal,
 		Cost = 1300,
 		Strength = 82,
@@ -259,6 +290,7 @@ local Blocks = {
 		Rarity = "Epic",
 	},
 	["Graphite Ceramic"] = {
+		Id = "Graphite Ceramic",
 		BlockType = BlockTypes.Ceramic,
 		Cost = 1150,
 		Strength = 80,
@@ -267,6 +299,7 @@ local Blocks = {
 		Rarity = "Epic",
 	},
 	["Diamond Coating"] = {
+		Id = "Diamond Coating",
 		BlockType = BlockTypes.Crystal,
 		Cost = 1550,
 		Strength = 86,
@@ -275,6 +308,7 @@ local Blocks = {
 		Rarity = "Legendary",
 	},
 	["Nano Honeycomb"] = {
+		Id = "Nano Honeycomb",
 		BlockType = BlockTypes.Composite,
 		Cost = 1450,
 		Strength = 84,
@@ -283,6 +317,7 @@ local Blocks = {
 		Rarity = "Epic",
 	},
 	["Tungsten Carbide"] = {
+		Id = "Tungsten Carbide",
 		BlockType = BlockTypes.Metal,
 		Cost = 1700,
 		Strength = 88,
@@ -291,6 +326,7 @@ local Blocks = {
 		Rarity = "Epic",
 	},
 	["Crystal-Infused Glass"] = {
+		Id = "Crystal-Infused Glass",
 		BlockType = BlockTypes.Glass,
 		Cost = 1350,
 		Strength = 82,
@@ -299,6 +335,7 @@ local Blocks = {
 		Rarity = "Epic",
 	},
 	["Basalt Fiber"] = {
+		Id = "Basalt Fiber",
 		BlockType = BlockTypes.Composite,
 		Cost = 1220,
 		Strength = 78,
@@ -307,6 +344,7 @@ local Blocks = {
 		Rarity = "Epic",
 	},
 	["High-Speed Steel"] = {
+		Id = "High-Speed Steel",
 		BlockType = BlockTypes.Metal,
 		Cost = 1420,
 		Strength = 83,
@@ -315,6 +353,7 @@ local Blocks = {
 		Rarity = "Epic",
 	},
 	["Foamed Aluminum"] = {
+		Id = "Foamed Aluminum",
 		BlockType = BlockTypes.Metal,
 		Cost = 900,
 		Strength = 72,
@@ -323,6 +362,7 @@ local Blocks = {
 		Rarity = "Rare",
 	},
 	["Reinforced Marble"] = {
+		Id = "Reinforced Marble",
 		BlockType = BlockTypes.Marble,
 		Cost = 1500,
 		Strength = 87,
@@ -333,6 +373,7 @@ local Blocks = {
 
 	-- Late game starts (diminishing returns more apparent)
 	["Graphene Sheet"] = {
+		Id = "Graphene Sheet",
 		BlockType = BlockTypes.Composite,
 		Cost = 2000,
 		Strength = 92,
@@ -341,6 +382,7 @@ local Blocks = {
 		Rarity = "Legendary",
 	},
 	["Diamond Glass"] = {
+		Id = "Diamond Glass",
 		BlockType = BlockTypes.Crystal,
 		Cost = 1850,
 		Strength = 90,
@@ -349,6 +391,7 @@ local Blocks = {
 		Rarity = "Legendary",
 	},
 	["Titan Steel"] = {
+		Id = "Titan Steel",
 		BlockType = BlockTypes.Metal,
 		Cost = 2100,
 		Strength = 94,
@@ -357,6 +400,7 @@ local Blocks = {
 		Rarity = "Legendary",
 	},
 	["Cold-Forged Titanium"] = {
+		Id = "Cold-Forged Titanium",
 		BlockType = BlockTypes.Metal,
 		Cost = 2300,
 		Strength = 96,
@@ -365,6 +409,7 @@ local Blocks = {
 		Rarity = "Legendary",
 	},
 	["Aerogel Panel"] = {
+		Id = "Aerogel Panel",
 		BlockType = BlockTypes.Matter,
 		Cost = 1750,
 		Strength = 89,
@@ -373,6 +418,7 @@ local Blocks = {
 		Rarity = "Epic",
 	},
 	["Reactive Ceramic"] = {
+		Id = "Reactive Ceramic",
 		BlockType = BlockTypes.Ceramic,
 		Cost = 2400,
 		Strength = 98,
@@ -381,6 +427,7 @@ local Blocks = {
 		Rarity = "Legendary",
 	},
 	["Magnesium Alloy"] = {
+		Id = "Magnesium Alloy",
 		BlockType = BlockTypes.Metal,
 		Cost = 1950,
 		Strength = 91,
@@ -389,6 +436,7 @@ local Blocks = {
 		Rarity = "Epic",
 	},
 	["Carbon Nanofoam"] = {
+		Id = "Carbon Nanofoam",
 		BlockType = BlockTypes.Composite,
 		Cost = 2600,
 		Strength = 100,
@@ -397,6 +445,7 @@ local Blocks = {
 		Rarity = "Legendary",
 	},
 	["Sapphire Glass"] = {
+		Id = "Sapphire Glass",
 		BlockType = BlockTypes.Glass,
 		Cost = 2200,
 		Strength = 95,
@@ -405,6 +454,7 @@ local Blocks = {
 		Rarity = "Legendary",
 	},
 	["Phase-Change Alloy"] = {
+		Id = "Phase-Change Alloy",
 		BlockType = BlockTypes.Metal,
 		Cost = 2800,
 		Strength = 102,
@@ -415,6 +465,7 @@ local Blocks = {
 
 	-- Very late game (grindy)
 	["Quantum Mesh"] = {
+		Id = "Quantum Mesh",
 		BlockType = BlockTypes.Matter,
 		Cost = 3500,
 		Strength = 106,
@@ -423,6 +474,7 @@ local Blocks = {
 		Rarity = "Legendary",
 	},
 	["Stressed Graphene"] = {
+		Id = "Stressed Graphene",
 		BlockType = BlockTypes.Composite,
 		Cost = 3900,
 		Strength = 108,
@@ -431,6 +483,7 @@ local Blocks = {
 		Rarity = "Legendary",
 	},
 	["Photonic Lattice"] = {
+		Id = "Photonic Lattice",
 		BlockType = BlockTypes.Crystal,
 		Cost = 4200,
 		Strength = 110,
@@ -439,6 +492,7 @@ local Blocks = {
 		Rarity = "Legendary",
 	},
 	["Tritan Composite"] = {
+		Id = "Tritan Composite",
 		BlockType = BlockTypes.Composite,
 		Cost = 3100,
 		Strength = 104,
@@ -447,6 +501,7 @@ local Blocks = {
 		Rarity = "Legendary",
 	},
 	["Ceramo-Metal"] = {
+		Id = "Ceramo-Metal",
 		BlockType = BlockTypes.Ceramic,
 		Cost = 3300,
 		Strength = 105,
@@ -455,6 +510,7 @@ local Blocks = {
 		Rarity = "Legendary",
 	},
 	["Metamaterial Foam"] = {
+		Id = "Metamaterial Foam",
 		BlockType = BlockTypes.Matter,
 		Cost = 4600,
 		Strength = 112,
@@ -463,6 +519,7 @@ local Blocks = {
 		Rarity = "Legendary",
 	},
 	["Phase Glass"] = {
+		Id = "Phase Glass",
 		BlockType = BlockTypes.Glass,
 		Cost = 3750,
 		Strength = 107,
@@ -471,6 +528,7 @@ local Blocks = {
 		Rarity = "Legendary",
 	},
 	["Polar Titanium"] = {
+		Id = "Polar Titanium",
 		BlockType = BlockTypes.Metal,
 		Cost = 4050,
 		Strength = 109,
@@ -479,6 +537,7 @@ local Blocks = {
 		Rarity = "Legendary",
 	},
 	["Void Ceramic"] = {
+		Id = "Void Ceramic",
 		BlockType = BlockTypes.Ceramic,
 		Cost = 5000,
 		Strength = 114,
@@ -487,6 +546,7 @@ local Blocks = {
 		Rarity = "Legendary",
 	},
 	["Hypersteel"] = {
+		Id = "Hypersteel",
 		BlockType = BlockTypes.Metal,
 		Cost = 5200,
 		Strength = 116,
@@ -497,6 +557,7 @@ local Blocks = {
 
 	-- Endgame: tiny strength bumps, cost ramps harder
 	["Photon Crystal"] = {
+		Id = "Photon Crystal",
 		BlockType = BlockTypes.Crystal,
 		Cost = 6800,
 		Strength = 120,
@@ -505,6 +566,7 @@ local Blocks = {
 		Rarity = "Legendary",
 	},
 	["Stellar Alloy"] = {
+		Id = "Stellar Alloy",
 		BlockType = BlockTypes.Metal,
 		Cost = 7400,
 		Strength = 122,
@@ -513,6 +575,7 @@ local Blocks = {
 		Rarity = "Legendary",
 	},
 	["Eternal Matter"] = {
+		Id = "Eternal Matter",
 		BlockType = BlockTypes.Matter,
 		Cost = 8200,
 		Strength = 124,
@@ -521,6 +584,7 @@ local Blocks = {
 		Rarity = "Mythical",
 	},
 	["Neutronium Trace"] = {
+		Id = "Neutronium Trace",
 		BlockType = BlockTypes.Matter,
 		Cost = 9100,
 		Strength = 126,
@@ -529,6 +593,7 @@ local Blocks = {
 		Rarity = "Mythical",
 	},
 	["Dark-Matter Alloy"] = {
+		Id = "Dark-Matter Alloy",
 		BlockType = BlockTypes.Metal,
 		Cost = 10000,
 		Strength = 128,
@@ -537,6 +602,7 @@ local Blocks = {
 		Rarity = "Mythical",
 	},
 	["Singularity Core"] = {
+		Id = "Singularity Core",
 		BlockType = BlockTypes.Matter,
 		Cost = 11200,
 		Strength = 130,
@@ -545,6 +611,7 @@ local Blocks = {
 		Rarity = "Mythical",
 	},
 	["Reality Shard"] = {
+		Id = "Reality Shard",
 		BlockType = BlockTypes.Matter,
 		Cost = 12600,
 		Strength = 132,
@@ -553,6 +620,7 @@ local Blocks = {
 		Rarity = "Mythical",
 	},
 	["Cosmic Fiber"] = {
+		Id = "Cosmic Fiber",
 		BlockType = BlockTypes.Fiber,
 		Cost = 11800,
 		Strength = 131,
@@ -561,6 +629,7 @@ local Blocks = {
 		Rarity = "Legendary",
 	},
 	["Celestial Essence"] = {
+		Id = "Celestial Essence",
 		BlockType = BlockTypes.Crystal,
 		Cost = 13500,
 		Strength = 134,
@@ -569,6 +638,7 @@ local Blocks = {
 		Rarity = "Mythical",
 	},
 	["Primordial Stone"] = {
+		Id = "Primordial Stone",
 		BlockType = BlockTypes.Stone,
 		Cost = 14500,
 		Strength = 136,
@@ -579,6 +649,7 @@ local Blocks = {
 
 	-- Ultra endgame grind
 	["Omnium"] = {
+		Id = "Omnium",
 		BlockType = BlockTypes.Concrete,
 		Cost = 15800,
 		Strength = 138,
@@ -587,6 +658,7 @@ local Blocks = {
 		Rarity = "Mythical",
 	},
 	["Godsteel"] = {
+		Id = "Godsteel",
 		BlockType = BlockTypes.Metal,
 		Cost = 17200,
 		Strength = 140,
@@ -595,6 +667,7 @@ local Blocks = {
 		Rarity = "Mythical",
 	},
 	["Eventide Alloy"] = {
+		Id = "Eventide Alloy",
 		BlockType = BlockTypes.Metal,
 		Cost = 18800,
 		Strength = 142,
@@ -603,6 +676,7 @@ local Blocks = {
 		Rarity = "Mythical",
 	},
 	["Aether Glass"] = {
+		Id = "Aether Glass",
 		BlockType = BlockTypes.Glass,
 		Cost = 20500,
 		Strength = 144,
@@ -611,6 +685,7 @@ local Blocks = {
 		Rarity = "Mythical",
 	},
 	["Quantum Filament"] = {
+		Id = "Quantum Filament",
 		BlockType = BlockTypes.Fiber,
 		Cost = 22400,
 		Strength = 146,
@@ -619,6 +694,7 @@ local Blocks = {
 		Rarity = "Mythical",
 	},
 	["Eclipsed Graphene"] = {
+		Id = "Eclipsed Graphene",
 		BlockType = BlockTypes.Fiber,
 		Cost = 24500,
 		Strength = 148,
@@ -627,6 +703,7 @@ local Blocks = {
 		Rarity = "Mythical",
 	},
 	["Aurora Ceramic"] = {
+		Id = "Aurora Ceramic",
 		BlockType = BlockTypes.Ceramic,
 		Cost = 26800,
 		Strength = 150,
@@ -635,6 +712,7 @@ local Blocks = {
 		Rarity = "Mythical",
 	},
 	["Prismatic Alloy"] = {
+		Id = "Prismatic Alloy",
 		BlockType = BlockTypes.Metal,
 		Cost = 29300,
 		Strength = 152,
@@ -643,6 +721,7 @@ local Blocks = {
 		Rarity = "Mythical",
 	},
 	["Luminite"] = {
+		Id = "Luminite",
 		BlockType = BlockTypes.Crystal,
 		Cost = 32000,
 		Strength = 154,
@@ -651,6 +730,7 @@ local Blocks = {
 		Rarity = "Mythical",
 	},
 	["Infinity Core"] = {
+		Id = "Infinity Core",
 		BlockType = BlockTypes.Matter,
 		Cost = 35000,
 		Strength = 156,
@@ -661,6 +741,7 @@ local Blocks = {
 
 	-- A few flavorful wildcards to hit ~60 total
 	["Sea-Glass Mix"] = {
+		Id = "Sea-Glass Mix",
 		BlockType = BlockTypes.Glass,
 		Cost = 120,
 		Strength = 18,
@@ -669,6 +750,7 @@ local Blocks = {
 		Rarity = "Common",
 	},
 	["Rubberized Ply"] = {
+		Id = "Rubberized Ply",
 		BlockType = BlockTypes.Composite,
 		Cost = 240,
 		Strength = 42,
@@ -677,6 +759,7 @@ local Blocks = {
 		Rarity = "Rare",
 	},
 	["Ashen Brick"] = {
+		Id = "Ashen Brick",
 		BlockType = BlockTypes.Brick,
 		Cost = 200,
 		Strength = 35,
@@ -685,6 +768,7 @@ local Blocks = {
 		Rarity = "Common",
 	},
 	["Cobalt Steel"] = {
+		Id = "Cobalt Steel",
 		BlockType = BlockTypes.Metal,
 		Cost = 980,
 		Strength = 77,
@@ -693,6 +777,7 @@ local Blocks = {
 		Rarity = "Epic",
 	},
 	["Iridescent Glass"] = {
+		Id = "Iridescent Glass",
 		BlockType = BlockTypes.Glass,
 		Cost = 520,
 		Strength = 59,
@@ -701,6 +786,7 @@ local Blocks = {
 		Rarity = "Epic",
 	},
 	["Amberwood"] = {
+		Id = "Amberwood",
 		BlockType = BlockTypes.Wood,
 		Cost = 190,
 		Strength = 33,
@@ -709,6 +795,7 @@ local Blocks = {
 		Rarity = "Common",
 	},
 	["Copper Alloy"] = {
+		Id = "Copper Alloy",
 		BlockType = BlockTypes.Metal,
 		Cost = 430,
 		Strength = 50,
@@ -717,6 +804,7 @@ local Blocks = {
 		Rarity = "Rare",
 	},
 	["Hard Ice"] = {
+		Id = "Hard Ice",
 		BlockType = BlockTypes.Crystal,
 		Cost = 270,
 		Strength = 41,
@@ -725,6 +813,7 @@ local Blocks = {
 		Rarity = "Common",
 	},
 	["Stormglass"] = {
+		Id = "Stormglass",
 		BlockType = BlockTypes.Glass,
 		Cost = 880,
 		Strength = 75,
@@ -733,6 +822,7 @@ local Blocks = {
 		Rarity = "Epic",
 	},
 	["Pearlstone"] = {
+		Id = "Pearlstone",
 		BlockType = BlockTypes.Stone,
 		Cost = 1050,
 		Strength = 79,
