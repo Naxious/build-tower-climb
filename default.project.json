@@ -1,0 +1,22 @@
+{
+	"name": "Build Tower Climb",
+	"tree": {
+		"$className": "DataModel",
+		"ReplicatedFirst": {
+			"$path": "Source/ReplicatedFirst",
+			"$ignoreUnknownInstances": true
+		},
+		"ReplicatedStorage": {
+			"$path": "Source/ReplicatedStorage",
+			"$ignoreUnknownInstances": true,
+			"Packages": {
+				"$path": "Packages",
+				"$ignoreUnknownInstances": true
+			}
+		},
+		"ServerScriptService": {
+			"$path": "Source/ServerScriptService",
+			"$ignoreUnknownInstances": true
+		}
+	}
+}

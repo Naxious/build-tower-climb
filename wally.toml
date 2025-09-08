@@ -1,0 +1,15 @@
+[package]
+name = "naxtrodaumus/brainrot-go"
+version = "0.1.0"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+
+# Terminal command to generate types for the wally packages;
+# rojo sourcemap default.project.json --output sourcemap.json
+# wally-package-types --sourcemap sourcemap.json Packages
+
+[dependencies]
+Component = "sleitnick/component@2.4.8" # https://sleitnick.github.io/RbxUtil/api/Component/
+Syscore = "naxious/syscore@1.0.1" # https://naxious.github.io/naxdocs/api/Syscore/
+
+[server-dependencies]
