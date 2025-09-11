@@ -68,14 +68,28 @@ function TowerService:BuildTower(player)
 				break
 			end
 
-			local trussPart = Instance.new("TrussPart")
-			trussPart.Name = string.format("%s %d (%.0f)", blockName, index, segment)
-			trussPart.Size = Vector3.new(2, segment, 2)
-			trussPart.CFrame = CFrame.new(buildPosition + Vector3.new(0, currentHeight + (segment / 2), 0))
-			trussPart.Color = blockData.Color
-			trussPart.Anchored = true
-			trussPart.Material = blockData.Material or Enum.Material.Plastic
-			trussPart.Parent = towerBase
+			for i = 1, 3 do
+				local originalCFrame = CFrame.new(buildPosition + Vector3.new(0, currentHeight + (segment / 2), 0))
+				local offset = originalCFrame.LookVector * (i - 2) * 2
+
+				local trussPart = Instance.new("TrussPart")
+				trussPart.Name = string.format("%s %d (%.0f)", blockName, index, segment) .. i
+				trussPart.Size = Vector3.new(2, segment, 2)
+				trussPart:PivotTo(originalCFrame * CFrame.new(offset))
+				trussPart.Color = blockData.Color
+				trussPart.Anchored = true
+				trussPart.Material = blockData.Material or Enum.Material.Plastic
+				trussPart.Parent = towerBase
+			end
+
+			local fillPart = Instance.new("Part")
+			fillPart.Name = string.format("%s %d (%.0f) Fill", blockName, index, segment)
+			fillPart.Size = Vector3.new(1.5, segment, 5.5)
+			fillPart:PivotTo(CFrame.new(buildPosition + Vector3.new(0, currentHeight + (segment / 2), 0)))
+			fillPart.Color = blockData.Color
+			fillPart.Anchored = true
+			fillPart.Material = blockData.Material or Enum.Material.Plastic
+			fillPart.Parent = towerBase
 
 			currentHeight += segment
 			remaining -= segment
@@ -86,7 +100,7 @@ function TowerService:BuildTower(player)
 end
 
 function TowerService:PlayerAdded(player)
-	-- TODO: Replace with actual data loading logic
+	-- TODO: Replace with actual design from players saved data
 	towerDesigns[player.UserId] = {
 		Blocks.Godsteel.Id,
 		Blocks.Amberwood.Id,
